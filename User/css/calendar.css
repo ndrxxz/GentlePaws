@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+* {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: none;
+    /* overflow: hidden; */
+}
+
+body{
+    display: flex;
+    justify-content: start;
+    background-color: #f4f4f4;
+}
+
+.sidebar{
+    position: sticky;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 240px;
+    height: 100vh;
+    padding: 0 1.7rem;
+    color: #fff;
+    overflow: hidden;
+    background: #fc7c8c;
+    float: left;
+}
+
+.logo{
+    text-align: center;
+    padding-top: 2rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.sub-menu a .dropdown{
+    position:absolute;
+    right: 0;
+    margin: 20px;
+    transition: 0.3s ease;
+}
+.sub-menu a span{
+    font-size: 15px;
+    margin: 5px;
+    
+}
+.sub-menu{
+    display: none;
+    padding: 10px 10px;
+  
+   
+}
+.sub-menu .fa-person{
+    font-size: 20px;
+    padding: 20px 0;
+    margin: 0;
+}
+.sub-menu .fa-dog{
+    font-size: 13px;
+    padding: 10px 0;
+    margin: 0;
+}
+
+.sched-active{
+    cursor: pointer;
+    background: #e0e0e058;
+}
+
+
+.logo{
+    height: 80px;
+  
+    
+}
+.menu{
+    height: 88%;
+    position: relative;
+    list-style: none;
+    padding: 0;
+}
+.menu li{
+    padding: 1rem;
+    margin: 8px 0;
+    border-radius: 8px;
+    transition: all 0.5s ease-in-out;
+}
+
+.menu li:hover{
+    background: #e0e0e058;
+}
+
+.menu a{
+    color: #fff;
+    font-size: 14px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 1.4rem;
+}
+.menu a span{
+    overflow: hidden;
+
+}
+.menu a i{
+ font-size: 1.2rem;
+}
+.logout{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+
+}
+.sidebar.active{
+    left: 0;
+
+}
+
+@media only screen and (max-width: 760px), (min-device-width: 802px) and (max-device-width: 1020px){
+    table,
+    thead,
+    tbody,
+    th,
+    td,
+    tr{
+        display: block;
+    }
+
+    .empty{
+        display: none;
+    }
+
+    th{
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+
+    tr{
+        border: 1px solid #ccc;
+    }
+
+    td{
+        border: none;
+        border-bottom: 1px solid #eee;
+        position: relative;
+        padding-left: 50%;
+    }
+
+    td:nth-of-type(1):before{
+        content: "Sunday";
+    }
+
+    td:nth-of-type(2):before{
+        content: "Monday";
+    }
+
+    td:nth-of-type(3):before{
+        content: "Tuesday";
+    }
+
+    td:nth-of-type(4):before{
+        content: "Wednesday";
+    }
+
+    td:nth-of-type(5):before{
+        content: "Thursday";
+    }
+
+    td:nth-of-type(6):before{
+        content: "Friday";
+    }
+
+    td:nth-of-type(7):before{
+        content: "Saturday";
+    }
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px){
+    body{
+        padding: 0;
+        margin: 0;
+    }
+}
+
+@media only screen and (min-device-width: 802px) and (max-device-width: 1020px){
+    body{
+        width: 495px;
+    }
+}
+
+@media (min-width: 641px){
+    table{
+        table-layout: fixed;
+    }
+
+    td{
+        width: 33%;
+    }
+}
+
+.row{
+    margin-top: 20px;
+}
+
+.today{
+    background: yellow;
+}
